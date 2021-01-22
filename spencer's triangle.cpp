@@ -40,7 +40,9 @@ int main()
     };
     int vertex = glCreateShader(GL_VERTEX_SHADER);
     int fragment = glCreateShader(GL_FRAGMENT_SHADER);
-    const char* string_arr[1];
+    const char* string_arr[1]; //an array of character pointers..., and since it's the same data type as our const char * shader string code, 
+    //we can store those two variables inside 
+    //the character pointer array
     string_arr[0] = vertex_shader;
     glShaderSource(vertex, 1, string_arr, 0);
     string_arr[0] = fragment_shader;
