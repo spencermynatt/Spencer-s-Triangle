@@ -47,6 +47,9 @@ int main()
     glShaderSource(vertex, 1, string_arr, 0);
     string_arr[0] = fragment_shader;
     glShaderSource(fragment, 1, string_arr, 0);
+    //gl shader source requires the shader, the size of the array of character pointers
+    //the actual name of the array,
+    //and the 0 represents how long our const char * is and we can just set that to zero
     glCompileShader(vertex);
     glCompileShader(fragment);
     int program = glCreateProgram();
