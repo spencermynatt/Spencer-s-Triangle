@@ -72,6 +72,10 @@ int main()
         glDrawArrays(GL_TRIANGLES, 0, 3);
        
         glfwSwapBuffers(window);
+        //swaping the front buffer and back buffer
+		//the front buffer is the display
+		// back buffer is the thing being rendered
+        
         glfwPollEvents();
     }
 
